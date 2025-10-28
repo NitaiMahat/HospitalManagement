@@ -37,7 +37,9 @@ public class PatientTest {
        // System.out.println(patient);
 
        //List<Patient> patientList = patientRepository.findByBirthDateOrEmail(LocalDate.of(1988, 3, 15),"lisa.beth@example.com");
-        List<Patient> patientList = patientRepository.findByBornAfterDate(LocalDate.of(1988, 3, 13));
+       // List<Patient> patientList = patientRepository.findByBornAfterDate(LocalDate.of(1988, 3, 13));
+
+        List<Patient>  patientList = patientRepository.findAllPatients();
 
         for(Patient patient : patientList){
             System.out.println(patient);
